@@ -11,5 +11,5 @@ Knowledge I have used to make this website:
   <li>CSS effects</li>
 </ul>
 
-## Live Preview:
-https://github.com/bagas-na/jewelry-front-page/deployments/activity_log?environment=github-pages
+## [Live Preview](https://bagas-na.github.io/jewelry-front-page/):
+https://bagas-na.github.io/jewelry-front-page/
