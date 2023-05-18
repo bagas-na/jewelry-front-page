@@ -1,0 +1,190 @@
+/* * {
+  border: 1px dotted brown;
+} */
+
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1366px;
+  background-color: #f5f2f3;
+  text-align: center;
+}
+
+header {
+  margin-top: 24px;
+  padding-bottom: 12px;
+  box-shadow: 0px 8px 6px -9px black;
+}
+
+header img {
+  margin: 0 auto;
+  display: block;
+}
+
+nav a {
+  font-family: 'Comfortaa', cursive;
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #cca8a8;
+}
+
+nav a:active {
+  color: #cca8a8;
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: min(3%, 45px);
+}
+
+ul > li {
+  padding: 0;
+  list-style: none;
+}
+
+main {
+  padding: 24px min(24px, 2%) 24px;
+  box-shadow: 0px 8px 6px -9px black,
+              0px -8px 6px -9px black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  gap: 24px;
+}
+
+#promotion {
+  grid-area: 1 / 2 / 2 / 4;
+  text-align: left;
+}
+
+#brace {
+  grid-area: 1 / 1 / 3 / 2;
+  text-align: right;
+}
+
+#neck {
+  grid-area: 2 / 2 / 4 / 4;
+  text-align: left;
+}
+
+#watch {
+  grid-area: 3 / 1 / 4 / 2;
+  text-align: right
+}
+
+.info-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 100px 0px rgba(0, 0, 0, 100%);
+}
+
+.info-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  object-position: center;
+}
+
+p.credit {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 4px 2%;
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  color: white;
+  background-color: rgba(0, 0, 0, 30%);
+}
+
+.info-card a {
+  color: white;
+}
+
+.info-card h2 {
+  margin: 0;
+  color: white;
+  /* background-color: rgba(0, 0, 0, 30%); */
+  font-family: 'Playfair Display', serif;
+}
+
+#promotion h2,
+#neck h2 {
+  padding-top: 2%;
+  padding-left: 3%;
+  font-size: 48px;
+  text-align: left;
+}
+
+#brace h2 {
+padding-top: 4%;
+padding-right: 5%;
+font-size: 36px;
+text-align: right;
+}
+
+#watch h2 {
+  padding-top: 2%;
+  padding-right: 5%;
+  font-size: 36px;
+  text-align: right;
+}
+
+.info-card button {
+  margin: 12px 0;
+  border: 1px solid white;
+  padding: 12px 20px 10px;
+  color: white;
+  background-color: transparent;
+  font-family: 'Comfortaa', cursive;
+  font-weight: 500;
+}
+
+.info-card button:hover {
+  background-color: rgba(255, 255, 255, 30%);
+}
+
+.info-card button:active {
+  color: #cca8a8;
+  background-color: rgba(255, 255, 255, 90%);
+}
+
+
+#promotion button,
+#neck button {
+  margin-left: 3%;
+}
+
+#brace button,
+#watch button {
+  margin-right: 5%;
+}
+
+h2 > span {
+  display: block;
+}
+
+footer {
+  margin: 24px 0;
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}
+
+p {
+  margin: 6px 0;
+}
